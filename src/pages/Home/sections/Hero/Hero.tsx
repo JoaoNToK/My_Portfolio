@@ -12,10 +12,18 @@ const Hero = () => {
     height: "100vh",
     display: "flex",
     alignItems: "center",
+    [theme.breakpoints.up("xs")]: {
+      // <= mobile
+      paddingTop: "100px",
+    },
+    [theme.breakpoints.up("xs")]: {
+      // >= mobile
+      paddingTop: "100px",
+    },
   }));
 
   const StyledImg = styled("img")(({ theme }) => ({
-    width: "70%",
+    width: "80%",
     borderRadius: "50%",
     botder: `1px solid ${theme.palette.primary.contrastText}`,
   }));
