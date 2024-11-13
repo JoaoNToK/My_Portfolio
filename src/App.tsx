@@ -1,7 +1,9 @@
-const App = () => {
+import Home from "./pages/Home/Home";
+
+const App = (): JSX.Element => {
   return (
     <>
-      <h1>Hello World</h1>
+      <Home />
     </>
   );
 };
